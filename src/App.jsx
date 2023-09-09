@@ -1,17 +1,18 @@
-import CompleteProfile from './components/Authentication/CompleteProfile';
-import Login from './components/Authentication/Login'
-import { Route, Routes } from "react-router-dom";
+import CompleteProfile from "./components/Authentication/CompleteProfile";
+import Login from "./components/Authentication/Login";
+import { BrowserRouter as Router,Route, Routes } from "react-router-dom";
+import Home from "./components/User/Home";
 
 function App() {
-
   return (
-    <>
-    <Routes>
+    <Router> 
+      <Routes>
         <Route path="/CompleteProfile" element={<CompleteProfile />}></Route>
         <Route path="/login" element={<Login />}></Route>
-      </Routes>    
-    </>
-  )
+        <Route path="/" element={<Home />}/>
+      </Routes>
+      </Router>
+  );
 }
 
-export default App
+export default App;
