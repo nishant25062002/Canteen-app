@@ -1,10 +1,10 @@
-import './Home.css';
+import "./Home.css";
 const Home = () => {
   return (
-    <div className="UserHome">
-        sdfasdf
+    <div className="Center">
+      <div className="UserHome">sdfasdf</div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

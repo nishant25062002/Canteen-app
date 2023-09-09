@@ -3,3 +3,8 @@
   border: 1px solid #9ec55b;
   background: #fff;
 }
+.Center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
