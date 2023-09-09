@@ -1,20 +1,15 @@
-import { React, useState } from 'react'
-import viteLogo from '/vite.svg'
-import Navbar from './components/Navbar'
-import Items from './components/Items'
-import Orders from './components/Orders'
+import CompleteProfile from './components/Authentication/CompleteProfile';
+import Login from './components/Authentication/Login'
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Navbar/>
-     <Items />
-     <Orders/>
-    
-
-       
+    <Routes>
+        <Route path="/CompleteProfile" element={<CompleteProfile />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+      </Routes>    
     </>
   )
 }
